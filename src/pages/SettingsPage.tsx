@@ -16,8 +16,8 @@ const SettingsPage: React.FC = () => {
       icon: "💕",
       items: [
         {
-          label: "Kosename",
-          description: "Wie soll dein Partner genannt werden?",
+          label: "Spitzname",
+          description: "Wie Isabell gnannt wird",
           component: (
             <Input
               value={partnerName}
@@ -133,13 +133,13 @@ const SettingsPage: React.FC = () => {
         >
           <Heart className="w-8 h-8 text-primary mx-auto mb-3 fill-primary/30" />
           <h2 className="font-display font-semibold text-foreground mb-2">
-            Für Dich ❤️
+            Für dich ❤️
           </h2>
           <p className="text-muted-foreground text-sm mb-3">
-            Mit viel Liebe gemacht, nur für dich.
+            Mit viel Liebi gmacht, nur für dich 💕
           </p>
           <p className="text-xs text-muted-foreground/70">
-            Version 1.0.0 • Made with 💕
+            💕💕💕
           </p>
         </motion.div>
       </div>
