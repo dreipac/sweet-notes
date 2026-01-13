@@ -9,9 +9,9 @@ const IntroAnimation: React.FC<IntroAnimationProps> = ({ onComplete }) => {
   const [currentPhase, setCurrentPhase] = React.useState(0);
 
   const messages = [
-    { text: "Hey mein Schatz...", emoji: "💕" },
-    { text: "Ich habe etwas für dich vorbereitet", emoji: "🎁" },
-    { text: "Weil du das Beste bist, was mir je passiert ist", emoji: "✨" },
+    { text: "Hoii min zemra jem", emoji: "💕" },
+    { text: "Ich han öppis gmacht für dichh", emoji: "🎁" },
+    { text: "Ich wott dir beweise das ich es ernst meine mit dir und din Loverboy bin und icch würkli es mit dir wott versprochee", emoji: "❤️" },
     { text: "Ich liebe dich", emoji: "❤️" },
   ];
 
