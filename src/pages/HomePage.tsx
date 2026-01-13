@@ -4,18 +4,18 @@ import FlipCard from "@/components/FlipCard";
 import FloatingHearts from "@/components/FloatingHearts";
 
 const loveReasons = [
-  "Dein Lächeln erhellt jeden meiner Tage",
-  "Du machst mich zu einem besseren Menschen",
-  "Mit dir fühle ich mich komplett",
-  "Deine Umarmungen sind mein Zuhause",
-  "Du verstehst mich ohne Worte",
-  "Dein Lachen ist die schönste Melodie",
-  "Du bist meine beste Freundin",
-  "Mit dir ist jeder Moment besonders",
-  "Du inspirierst mich jeden Tag",
-  "Deine Liebe gibt mir Kraft",
-  "Du bist mein Sonnenschein",
-  "Ich bin so dankbar für dich",
+  "Dis lächle erhellt mich jede Tag",
+  "Du machsch mich zu einem bessere Mensch",
+  "Nur mit dir fühl ich mich vollständig",
+  "Dini Umarmige sind mis diheii",
+  "Du verstahsch mich ohni Wörter",
+  "Dis Lächle isch das schönste wo mini Auge je gseh hend",
+  "Du bisch mini Ehefrauu",
+  "Mit dir fühlt sich jede Moment perfekt ah",
+  "Du zeigsch mir was Liebi heisst",
+  "Dini Liebi gibt mir Kraft",
+  "Du bisch min shpirt",
+  "Ich bin so dankbar das ich dich han",
 ];
 
 const HomePage: React.FC = () => {
@@ -36,10 +36,10 @@ const HomePage: React.FC = () => {
           💕
         </motion.span>
         <h1 className="text-2xl font-display font-bold text-foreground mb-2">
-          Warum ich dich liebe
+          Wiso ich dich liebe:
         </h1>
         <p className="text-muted-foreground text-sm">
-          Tippe auf eine Karte, um sie aufzudecken
+          Drück uf einer Karte um es umzudrehe
         </p>
       </motion.div>
 
@@ -55,7 +55,7 @@ const HomePage: React.FC = () => {
         transition={{ delay: 1.5 }}
         className="text-center text-muted-foreground text-sm mt-8 relative z-10"
       >
-        Und es gibt noch so viel mehr... ❤️
+        Es git no so viel meh wo ich säge chönnti und die Site wär ka wie lang ❤️
       </motion.p>
     </div>
   );
