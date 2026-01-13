@@ -5,15 +5,15 @@ import { Heart } from "lucide-react";
 const LoveLetterPage: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  const letterContent = `Mein liebster Schatz,
+  const letterContent = `Min Zemra jem,
 
-Jeden Tag mit dir ist ein Geschenk. Du bist nicht nur meine Partnerin, sondern auch meine beste Freundin, mein Fels in der Brandung und mein größtes Glück.
+Jede Tag wo ich mit dir han isch es geschenk für mich will du mich zum glückliste Mensch uf dere Welt machsch. Du bisch mis Glück.
 
-Ich liebe es, wie du lachst, wie du mich anschaust und wie du immer für mich da bist. Mit dir fühle ich mich vollständig.
+Ich lieb es wie du mich ahlächlisch damit schmilzt mis Herz immer. Es tuet mir Leid das ich so kalt tue han die letzti 2 Wuche es het nix mit dir ztue.
 
-Danke, dass du mein Leben so wunderbar machst. Ich freue mich auf jede Sekunde, die wir noch zusammen erleben werden.
+Ich bin chli Müed gsi den au gstresst und jede Mensch het mal so sini Phase und ich hätti dir sölle säge was los isch und ich verstahn dich wiso du so reagiert hesch.
 
-Für immer dein,
+Ich werde dich für immer liebe und ich wott dich heirate ich bin din Loverboy und Ehemann
 💕`;
 
   return (
@@ -27,7 +27,7 @@ Für immer dein,
           Ein Brief für dich
         </h1>
         <p className="text-muted-foreground text-sm">
-          {isOpen ? "Mit Liebe geschrieben ❤️" : "Tippe auf den Brief, um ihn zu öffnen"}
+          {isOpen ? "Mit Liebi gschribe nur für dich ❤️" : "Drück druf, um de Brief zu öffne"}
         </p>
       </motion.div>
 
@@ -73,7 +73,7 @@ Für immer dein,
                 animate={{ opacity: [0.5, 1, 0.5] }}
                 transition={{ duration: 2, repeat: Infinity }}
               >
-                ✨ Tippe zum Öffnen ✨
+                Drück druf um zu öffne
               </motion.p>
             </motion.div>
           ) : (
@@ -117,7 +117,7 @@ Für immer dein,
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Brief schließen 💌
+                Brief schliesse 💌
               </motion.button>
             </motion.div>
           )}
