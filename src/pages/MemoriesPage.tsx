@@ -5,38 +5,38 @@ import { Heart, Camera } from "lucide-react";
 const memories = [
   {
     id: 1,
-    title: "Unser erstes Date",
-    description: "Der Tag, an dem alles begann...",
+    title: "Euses erste Date mit de Rose",
+    description: "De Tag wo alles agfange het",
     emoji: "💕",
   },
   {
     id: 2,
-    title: "Unser erster Urlaub",
-    description: "Unvergessliche Momente zusammen",
-    emoji: "✈️",
+    title: "Wo mir zemme cho sind",
+    description: "Beide nervös und mir hend eus Versprechige geh und beidi simmer verliebt gsii, de schönsti Tag wo ich je gha hann",
+    emoji: "❤️",
   },
   {
     id: 3,
-    title: "Unsere Hochzeit",
-    description: "Der schönste Tag meines Lebens",
+    title: "Erste mal Chur",
+    description: "Interessant gsi und dir hani zeigt mini City",
     emoji: "💒",
   },
   {
     id: 4,
-    title: "Unser Zuhause",
-    description: "Wo Liebe wohnt",
-    emoji: "🏠",
+    title: "Ersti Übernachtig",
+    description: "Beidi ufgregt gsi und für eus beidi en sehr schöne Abig",
+    emoji: "💤",
   },
   {
     id: 5,
-    title: "Besondere Momente",
-    description: "All die kleinen Dinge",
+    title: "Kommunikation und Liebi",
+    description: "Mir geben eus Mühe um besser zu werde und ich denke mir verdienen en zweite Chance",
     emoji: "✨",
   },
   {
     id: 6,
-    title: "Unsere Zukunft",
-    description: "Alles was noch kommt...",
+    title: "Eusi Zuekunft",
+    description: "Alles chunnt no uf eus zue und mir werden reifer und besser zemme verbringe",
     emoji: "🌟",
   },
 ];
@@ -103,14 +103,14 @@ const MemoriesPage: React.FC = () => {
         <div className="flex items-center gap-3 mb-3">
           <Camera className="w-5 h-5 text-primary" />
           <h3 className="font-display font-semibold text-foreground">
-            Neue Erinnerung hinzufügen
+            Neui Erinnerig hinzuefüege
           </h3>
         </div>
         <p className="text-muted-foreground text-sm mb-4">
-          Bald kannst du hier eigene Fotos und Erinnerungen speichern 💕
+          Bald chasch eigeni Erinnerige ine tue  💕
         </p>
         <div className="w-full h-32 border-2 border-dashed border-primary/30 rounded-xl flex items-center justify-center">
-          <span className="text-primary/50 text-sm">Bald verfügbar...</span>
+          <span className="text-primary/50 text-sm">Bald verfüegbar</span>
         </div>
       </motion.div>
     </div>
