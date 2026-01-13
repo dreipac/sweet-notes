@@ -9,6 +9,11 @@ export default defineConfig(({ mode }) => ({
   // z.B. base: '/love-app/' wenn dein Repo 'love-app' heisst
   // Für Lovable/Vercel/Netlify: lass es auf '/'
   base: process.env.GITHUB_ACTIONS ? '/sweet-notes/' : '/',
+
+  build: {
+    outDir: "docs",     
+    emptyOutDir: true,   
+  },
   server: {
     host: "::",
     port: 8080,
