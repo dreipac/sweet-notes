@@ -1,0 +1,47 @@
+name: Update package-lock.json
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-lockfile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Try npm ci, fallback to npm install
+        run: |
+          echo "Versuche npm ci..."
+          if npm ci; then
+            echo "npm ci erfolgreich"
+          else
+            echo "npm ci fehlgeschlagen — führe npm install aus, um package-lock.json zu regenerieren"
+            npm install --no-audit --no-fund
+          fi
+          # zeige Änderungen (nur zur Info)
+          git --no-pager status --porcelain
+      - name: Run build if available
+        run: |
+          if npm run | grep -q " build"; then
+            echo "Build-Skript gefunden — baue Projekt"
+            npm run build
+          else
+            echo "Kein build-Skript gefunden — überspringe Build"
+          fi
+
+      - name: Create Pull Request with updated lockfile
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: chore: update package-lock.json
+          title: chore: update package-lock.json to match package.json
+          body: |
+            This PR updates package-lock.json to match package.json so CI can run `npm ci`.
+          branch: update-lockfile-automation
