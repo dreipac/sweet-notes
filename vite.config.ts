@@ -5,6 +5,10 @@ import { componentTagger } from "lovable-tagger";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig(({ mode }) => ({
+  // Für GitHub Pages: Ersetze 'DEIN-REPO-NAME' mit deinem Repository-Namen
+  // z.B. base: '/love-app/' wenn dein Repo 'love-app' heisst
+  // Für Lovable/Vercel/Netlify: lass es auf '/'
+  base: process.env.GITHUB_ACTIONS ? '/DEIN-REPO-NAME/' : '/',
   server: {
     host: "::",
     port: 8080,
